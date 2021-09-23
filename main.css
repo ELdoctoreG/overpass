@@ -716,4 +716,12 @@ a:hover, a:focus {
     left: 20px;
     cursor: pointer;
     z-index: 99;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .chat-box {
+        display: block;
+    }
+
 }
