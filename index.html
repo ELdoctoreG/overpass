@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Client Registration | Overpass</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navigation">
+    <object class="logo" data="./assets/overpass__logo.svg" type="image/svg+xml">
+        overpass logo
+    </object>
+</nav>
+<div class="registration-container">
+    <section class="show-less" id="registration-steppers-container">
+        <!--Step one-->
+        <div class="step-box active-step">
+            <div class="step-number">
+                <p>1</p>
+            </div>
+            <div class="step-text">
+                <div class="step-header">
+                    <h2 class="step-title">Create Account</h2>
+                    <span class="step-left">3 steps left</span>
+                </div>
+                <p class="step-body">
+                    Register your company - it takes less than a minute.
+                </p>
+            </div>
+        </div>
+        <!--Step two-->
+        <div class="step-box">
+            <div class="step-number">
+                <p>2</p>
+            </div>
+            <div class="step-text">
+                <div class="step-header">
+                    <h2 class="step-title">Create Job Post</h2>
+                    <span class="step-left">2 steps left</span>
+                </div>
+                <p class="step-body">
+                    Let us know your project goals and what kind of talent you need. We’ll get you the best matches for
+                    the role.
+                </p>
+            </div>
+        </div>
+        <!--Step three-->
+        <div class="step-box">
+            <div class="step-number">
+                <p>3</p>
+            </div>
+            <div class="step-text">
+                <div class="step-header">
+                    <h2 class="step-title">Create Account</h2>
+                    <span class="step-left">1 steps left</span>
+                </div>
+                <p class="step-body">
+                    Interview Suzanne and many more other
+                    qualified contractors.
+                </p>
+            </div>
+        </div>
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-photo">
+                    <img alt="profile photo" src="./assets/profile__image.png">
+                </div>
+                <h2 class="profile-name">
+                    Suzanne J.
+                </h2>
+                <a class="profile-video" href="https://www.youtube.com/watch?v=DALEwiDArCQ" target="_blank">
+                    <div class="profile-video-icon">
+                        <object class="play-icon" data="./assets/play-button.svg" type="image/svg+xml">
+                            play button
+                        </object>
+                    </div>
+                    <p class="profile-video-text">
+                        Sample
+                    </p>
+                </a>
+            </div>
+            <div class="profile-body">
+                <h2 class="profile-name">
+                    Suzanne J.
+                </h2>
+
+                <ul class="profile-details-container">
+                    <li class="profile-detail">
+                        <div class="icon-details">
+                            <object class="timezone-icon" data="./assets/timezone.svg" type="image/svg+xml">
+                                timezone
+                            </object>
+                        </div>
+                        <div class="text-details">
+                            <p>
+                                <strong>United States</strong> - 10:52 AM local time
+                            </p>
+                            <span>Pacific (GMT - 8)</span>
+                        </div>
+                    </li>
+
+                    <li class="profile-detail">
+                        <div class="icon-details">
+                            <object class="briefcase-icon" data="./assets/briefcase.svg" type="image/svg+xml">
+                                briefcase
+                            </object>
+                        </div>
+                        <div class="text-details">
+                            <p>
+                                <strong>Real Estate Specialist</strong> - 2 yrs 5 mos
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="profile-detail">
+                        <div class="icon-details">
+                            <object class="money-icon" data="./assets/money.svg" type="image/svg+xml">
+                                money
+                            </object>
+                        </div>
+                        <div class="text-details">
+                            <p>
+                                <strong>$27.50/hr</strong>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="profile-interest">
+                    <p>
+                        <strong>Interested In Roles like</strong>
+                    </p>
+                    <ul>
+                        <li>Appointment Setter,</li>
+                        <li>Donation Workeer,</li>
+                        <li>Inside Sales Representative</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button class="button" id="show-more-btn">
+            Show more
+            <object class="button-icon" data="./assets/creat-down_f.svg" type="image/svg+xml">
+                arrow down
+            </object>
+        </button>
+
+        <button class="button" id="show-less-btn">
+            Show Less
+            <object class="button-icon arrow-up-icon" data="./assets/creat-down_f.svg" type="image/svg+xml">
+                arrow up
+            </object>
+        </button>
+    </section>
+
+    <section id="registration-form-container">
+        <a class="registration-form-header" href="#">
+            Looking to get a job? <strong>Register As A Sales Rep.</strong>
+        </a>
+        <form action="#" id="registration-form" name="registrationForm">
+            <h1>Create Account</h1>
+            <p>To Register Your Company</p>
+
+            <div class="registration-form-input">
+                <label for="first-name">First Name</label>
+                <input id="first-name"
+                       minlength="4"
+                       name="first-name"
+                       placeholder="Type your first name"
+                       required
+                       type="text">
+            </div>
+
+            <div class="registration-form-input">
+                <label for="last-name">Last Name</label>
+                <input id="last-name"
+                       minlength="4"
+                       name="last-name"
+                       placeholder="Type your last name"
+                       required
+                       type="text">
+            </div>
+
+            <div class="registration-form-input">
+                <label for="email">Email</label>
+                <input id="email"
+                       minlength="4"
+                       name="email"
+                       placeholder="Type your email"
+                       required
+                       type="email">
+            </div>
+
+            <div class="registration-form-input">
+                <label for="phone">Phone Number</label>
+                <div class="phone-input">
+                    <div class="country">
+                        <div class="select" id="country">
+                            <div>
+                                <img alt="country flag" src="./assets/us.png">
+                                +1
+                            </div>
+                            <object class="input-icon" data="./assets/creat-down_f.svg" type="image/svg+xml">
+                                input icon down
+                            </object>
+                        </div>
+                    </div>
+                    <input id="phone"
+                           name="phone"
+                           placeholder="(000) 000-0000"
+                           required
+                           type="tel">
+                </div>
+            </div>
+
+            <div class="registration-form-input">
+                <label for="promo-code">Promo code</label>
+                <div class="promo-code-input">
+                    <input id="promo-code"
+                           minlength="4"
+                           name="promo-code"
+                           placeholder="Type your promo code"
+                           required
+                           type="text">
+                    <div id="promo-code-validator">
+                        <object class="promo-code-validator-icon" data="./assets/Icon.svg" type="image/svg+xml">
+                            promo code validator
+                        </object>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registration-form-action">
+                <button type="submit" class="button primary-button disabled-button" id="next-btn">
+                    Next
+                </button>
+
+                <button class="button" id="log-in-btn">
+                    Log In Instead
+                </button>
+            </div>
+        </form>
+    </section>
+    <a class="chat-box">
+        <object class="chat-box-icon" data="./assets/intercom.svg" type="image/svg+xml">
+            promo code validator
+        </object>
+    </a>
+</div>
+<script src="./index.js"></script>
+</body>
+</html>
